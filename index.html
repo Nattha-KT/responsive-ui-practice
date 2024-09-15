@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- defer attribute so that the javascript code will waite for the HTML code to finish loading -->
+    <script type="text/javascript" src="app.js" defer></script>
+</head>
+
+<body>
+    <nav id="sidebar">
+        <ul>
+            <li>
+                <span class="logo">CodingPractice</span>
+                <button id="toggle-btn" onclick=toggleSidebar()>
+                    <img src="./assets/icons/arrow-left.svg" alt="">
+                </button>
+            </li>
+            <li class="active">
+                <a href="index.html">
+                    <img src="./assets/icons/home.svg" alt="">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="dashboard.html">
+                    <img src="./assets/icons/dashboard.svg" alt="">
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <!-- Dropdown list on Create -->
+            <li>
+                <!-- "this" return the current HTML element where it is called -->
+                <button class="dropdown-btn" onclick=toggleSubMenu(this)>
+                    <img src="./assets/icons/create.svg" alt="">
+                    <span>Create</span>
+                    <img src="./assets/icons/arrow-down.svg" alt="">
+                </button>
+                <ul class="sub-menu">
+                    <div>
+                        <li>
+                            <a href="#">Folder</a>
+                        </li>
+                        <li>
+                            <a href="#">Document</a>
+                        </li>
+                        <li>
+                            <a href="#">Project</a>
+                        </li>
+                    </div>
+                </ul>
+            </li>
+            <!-- Dropdown list on Todo-list -->
+            <li>
+                <button class="dropdown-btn" onclick=toggleSubMenu(this)>
+                    <img src="./assets/icons/checklist.svg" alt="">
+                    <span>Todo-Lists</span>
+                    <img src="./assets/icons/arrow-down.svg" alt="">
+                </button>
+                <ul class="sub-menu">
+                    <div>
+                        <li>
+                            <a href="#">Work</a>
+                        </li>
+                        <li>
+                            <a href="#">Private</a>
+                        </li>
+                        <li>
+                            <a href="#">Coding</a>
+                        </li>
+                        <li>
+                            <a href="#">Gardening</a>
+                        </li>
+                        <li>
+                            <a href="#">School</a>
+                        </li>
+                    </div>
+                </ul>
+            </li>
+            <li>
+                <a href="celendar.html">
+                    <img src="./assets/icons/canlendar.svg" alt="">
+                    <span>Calendar</span></a>
+            </li>
+            <li>
+                <a href="profile.html">
+                    <img src="./assets/icons/profile.svg" alt="">
+                    <span>Profile</span></a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container">
+            <h2>Helloe world</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatum maiores distinctio
+                accusamus dignissimos! Voluptatem, quibusdam? Maiores placeat itaque ducimus.</p>
+        </div>
+        <div class="container">
+            <h2>Example Heading</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit eos, perspiciatis rem corrupti blanditiis
+                delectus quod vitae unde maxime perferendis? Saepe asperiores quisquam amet iusto praesentium
+                perspiciatis, sint id laboriosam vel aliquid impedit et dicta accusamus nulla accusantium suscipit
+                consequuntur. Nisi, repellendus, praesentium tempora eos aliquid dolor, ea aut illum fuga id veniam vero
+                iusto quidem voluptatem molestias! Quam a non esse eligendi enim sunt illum, obcaecati deserunt omnis!
+                Voluptate provident culpa accusamus cumque optio vitae iure? Ea consequuntur voluptas quisquam adipisci
+                assumenda accusamus odit dignissimos enim modi, fuga vel possimus numquam consectetur itaque suscipit
+                commodi cupiditate nisi ipsam exercitationem rerum? Eaque, totam, doloremque facere laborum impedit
+                velit eos veniam non, cupiditate sunt consequatur. Fugit nemo vitae ipsum consectetur vel.</p>
+        </div>
+        <div class="container">
+            <h2>Example Heading2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, consectetur nostrum! Harum sit dolores
+                amet aut eius maiores libero hic nisi impedit atque, iure sunt! Doloremque quisquam quidem deserunt
+                aliquam numquam ex possimus adipisci dolorem nulla, temporibus hic voluptatem fugit voluptatibus odio?
+                Suscipit nesciunt, id dignissimos perferendis dicta eaque quaerat laboriosam sunt animi esse beatae,
+                harum doloremque unde, repellat maiores!.</p>
+        </div>
+    </main>
+</body>
+
+</html>
